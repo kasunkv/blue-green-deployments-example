@@ -87,8 +87,24 @@
             "displayName": "appSettings"
           },
           "properties": {
-            "SlotSettingExample": "Setting 1",
-            "NonSlotSettingExample": "This is Common"
+            "SlotSettingExample": "This is a slot setting in the Production Slot",
+            "NonSlotSettingExample": "Production"
+          }
+        },
+        {
+          "name": "slotConfigNames",
+          "type": "config",
+          "apiVersion": "2015-08-01",
+          "dependsOn": [
+            "[resourceId('Microsoft.Web/sites', variables('webSiteName'))]"
+          ],
+          "tags": {
+            "displayName": "slotSettings"
+          },
+          "properties": {
+            "appSettingNames": [
+              "SlotSettingExample"
+            ]
           }
         },
         {
@@ -116,8 +132,8 @@
                 "displayName": "appSettings"
               },
               "properties": {
-                "SlotSettingExample": "Setting 2",
-                "NonSlotSettingExample": "This is Common, and swapped"
+                "SlotSettingExample": "This is a slot setting in the Staging slot",
+                "NonSlotSettingExample": "Staging"
               }
             }
           ]
