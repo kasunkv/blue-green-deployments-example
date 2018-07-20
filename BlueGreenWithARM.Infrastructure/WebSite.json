@@ -88,7 +88,8 @@
           },
           "properties": {
             "SlotSettingExample": "This is a slot setting in the Production Slot",
-            "NonSlotSettingExample": "Production"
+            "NonSlotSettingExample": "Production",
+            "WEBSITE_RUN_FROM_ZIP": "1"
           }
         },
         {
@@ -133,7 +134,8 @@
               },
               "properties": {
                 "SlotSettingExample": "This is a slot setting in the Staging slot",
-                "NonSlotSettingExample": "Staging"
+                "NonSlotSettingExample": "Staging",
+                "WEBSITE_RUN_FROM_ZIP": "1"
               }
             }
           ]
